@@ -12,8 +12,8 @@
 #define bit_to_sign(x, mask) (((x & mask) != 0) ? -1 : 1)
 #define DIRECTION_INVERT_MASK 3
 
-// LED
-#define LED_DEBOUNCE_TIME 300
+// SERVO
+#define PEN_DEBOUNCE_TIME 300
 
 // STEPERS CONFIGURATIONS
 #define X_STEP_PIN 5
@@ -53,6 +53,7 @@
 // SOFT LIMITS SETTINGS
 #define ENABLE_SOFT_LIMIT 1 // uncomment to disable soft limits
 #define AUTO_HOME_STEPS_RATE 1200
+
 #define X_MM_RAIL_LENGTH 740
 #define Y_MM_RAIL_LENGTH 600
 
@@ -63,10 +64,6 @@
 #define X_MM_MIN_LIMIT (-325)
 #define Y_MM_MAX_LIMIT 290
 #define X_MM_MAX_LIMIT 325
-
-
-// AUTO HOME OFFSET
-#define MM_OFFSET 40
 
 // AUTO PRINTING
 #define PENDING_TIME (1000000 * 180)

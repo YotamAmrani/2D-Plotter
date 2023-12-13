@@ -49,7 +49,7 @@ void state_handler(int current_steps_mask, int pen_state, StepperController *ste
     }
     else
     {
-        if (state.sys_mode == MOVE && (micros() - state.last_move_time_stamp) > LED_DEBOUNCE_TIME)
+        if (state.sys_mode == MOVE && (micros() - state.last_move_time_stamp) > PEN_DEBOUNCE_TIME)
         {
             state.sys_mode = IDLE;
             // stepper_c->set_enable(false);
